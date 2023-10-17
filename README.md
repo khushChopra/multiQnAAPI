@@ -58,8 +58,17 @@ Result is a JSON in the following format -
 
 ## Running the application
 1. Add OPEN API key to vars_example.py and rename it vars.py
-2. Install dependencies - pip install -r requirements.txt 
+2. Install dependencies - pip install -r requirements.txt or use virtual environment
 3. Run application using - python main.py 
+4. Make post request to localhost:8000 with files questions and document. Curl command is given below -
+```
+curl --request POST \
+  --url http://127.0.0.1:8000/ \
+  --header 'Content-Type: multipart/form-data' \
+  --header 'User-Agent: Insomnia/2023.5.7' \
+  --form questions=@/Users/khush/Downloads/que.json \
+  --form 'document=@/Users/khush/Desktop/Resume 23 Sept MIN.pdf'
+```
 
 ## DEMO Video
 
