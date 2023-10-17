@@ -65,16 +65,9 @@ Result is a JSON in the following format -
 curl --request POST \
   --url http://127.0.0.1:8000/ \
   --header 'Content-Type: multipart/form-data' \
-  --header 'User-Agent: Insomnia/2023.5.7' \
-  --form questions=@/Users/khush/Downloads/que.json \
-  --form 'document=@/Users/khush/Desktop/Resume 23 Sept MIN.pdf'
+  --form questions=@/que.json \
+  --form 'document=@/document.pdf'
 ```
-
-
-## DEMO Video
-
-
-
 
 
 
