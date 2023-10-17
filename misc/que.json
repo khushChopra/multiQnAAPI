@@ -1,0 +1,10 @@
+{
+    "questions": [
+        {
+            "content": "What is the candidates name?"
+        },
+        {
+            "content": "What is his experience with Python"
+        }
+    ]
+}
