@@ -57,9 +57,9 @@ Result is a JSON in the following format -
 ```
 
 ## Running the application
-1. Add OPEN API key to src/vars_example.py and rename it src/vars.py
+1. Add OPEN API key to src/keys.sh and source it
 2. Install dependencies - pip install -r requirements.txt or use virtual environment
-3. Run application using - python main.py 
+3. Run application using - python src/main.py 
 4. Make post request to localhost:8000 with files questions and document. Curl command is given below -
 ```
 curl --request POST \
@@ -70,6 +70,7 @@ curl --request POST \
   --form 'document=@/Users/khush/Desktop/Resume 23 Sept MIN.pdf'
 ```
 
+
 ## DEMO Video
 
 
@@ -77,3 +78,7 @@ curl --request POST \
 
 
 
+### Running tests 
+1. Add OPEN API key to src/keys.sh and source it
+2. Change directory to "src" 
+3. Run command "python3 -m unittest"

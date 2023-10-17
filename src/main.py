@@ -1,10 +1,10 @@
-from vars import OPEN_API_KEY
 from flask import Flask, request, send_file
 from zania import AnsweringWizard
 from uuid import uuid4
 import os
 import tempfile
 import json
+OPEN_API_KEY = os.environ.get("OPEN_API_KEY")
 FILE_STORE_LOCATION = "temp"
 
 app = Flask(__name__)

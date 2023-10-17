@@ -26,8 +26,9 @@ class AnsweringWizard():
         self.doc_file_name = doc_file_name
         self.que_file_name = que_file_name
         self.open_ai_key = open_ai_key
-        self.retriver = self.get_retriver(self.get_document())
+        documents = self.get_document()
         self.questions = self.get_questions()
+        self.retriver = self.get_retriver(documents)
         
     def get_document(self):
         if self.doc_file_name.endswith(".pdf"):
