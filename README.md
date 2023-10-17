@@ -57,7 +57,7 @@ Result is a JSON in the following format -
 ```
 
 ## Running the application
-1. Add OPEN API key to vars_example.py and rename it vars.py
+1. Add OPEN API key to src/vars_example.py and rename it src/vars.py
 2. Install dependencies - pip install -r requirements.txt or use virtual environment
 3. Run application using - python main.py 
 4. Make post request to localhost:8000 with files questions and document. Curl command is given below -

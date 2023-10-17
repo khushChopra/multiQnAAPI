@@ -1,6 +1,6 @@
 from vars import OPEN_API_KEY
 from flask import Flask, request, send_file
-from wizard import AnsweringWizard
+from zania import AnsweringWizard
 from uuid import uuid4
 import os
 import tempfile
